@@ -1,0 +1,19 @@
+{
+  "name": "gastronomy-app",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @gastronomy/web",
+    "build": "npm run build --workspace @gastronomy/web",
+    "start": "npm run start --workspace @gastronomy/web",
+    "lint": "npm run lint --workspace @gastronomy/web",
+    "typecheck": "npm run typecheck --workspace @gastronomy/web",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
